@@ -1,0 +1,358 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+a{
+text-decoration: none;
+}
+
+@font-face {
+    font-family: "Gotham Pro";
+    font-style: normal;
+    font-weight: normal;
+  
+    src: local("Gotam Pro"),
+         url("/fonts/GothamPro/GothamPro.ttf") format("ttf"),
+}
+
+@font-face {
+    font-family: "Gotham Pro";
+    font-style: normal;
+    font-weight: 300;
+  
+    src: local("Gotam Pro"),
+         url("/fonts/GothamPro/GothamPro-Light.ttf") format("ttf"),
+}
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    
+}
+.title h2{
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 31px;
+    line-height: 37px;
+    color: #444444;
+}
+.title img{
+    margin-left: 18px;
+    margin-top: 3px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    padding: 20px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+}
+
+.card__preview-img{
+    position: relative;
+}
+
+.card__preview-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card__badges{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.card__badges div{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.card__new{
+    background: #EEFCF6;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #3DDC97;
+}
+
+.card__besteseller{
+    background: #FCF4ED;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #E49F62;
+}
+
+.card__description{
+    margin-top: 15px;
+}
+
+.card__main-desc{
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    color: #888888;
+    align-self: stretch;
+}
+
+.card__title{
+    margin-top: 5px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #444444;
+}
+
+.card__score{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #00ADEF;
+}
+
+.card__score img{
+    margin-right: 5px;
+}
+
+.card__price{
+    display: flex;
+    align-items: baseline;
+    margin-top: 34px;
+}
+
+.card__main-price{
+    margin-right: 5px;
+
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    color: #444444;
+
+}
+.card__past-price{
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-decoration-line: line-through;
+    color: #888888;
+}
+
+.card__actions{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__basket{
+    display: flex;
+    padding: 14px 36px 16px;
+    align-items: center;
+    justify-content: center;
+    background: #00ADEF;
+    border-radius: 5px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.card__icons{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.5;
+}
+
+.swiper-wrapper{
+    position: relative;
+}
+
+.swiper-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.swiper-next,
+.swiper-prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    background-color: #F6F6F6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.swiper-next{
+    margin-left: 10px;
+}
+
+@media (max-width:1200px){
+    .container{
+        max-width: 1010px;
+    }
+    .card{
+        width: 247px;
+    }
+}
+
+
+@media (max-width:1012px){
+    .container{
+        max-width: 750px;
+    }
+}    
+
+@media (max-width:768px){
+    .container{
+        max-width: 702px;
+    }
+    .swiper{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .card__new{
+        display: none;
+    }
+}
+
+@media (max-width:710px){
+    .container{
+        max-width: 592px;
+    }
+}
+
+@media (max-width:576px){
+    .container{
+        max-width: 520px;
+    }
+    .card{
+        width: 247px;
+    }
+
+    
+}
+
+@media (max-width:430px){
+    .container{
+        max-width: 290px;
+    }
+    .slider-header{
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        position: relative;
+        width: 290px;
+    }
+
+    .card__actions{
+        width: 100%;
+    }
+    .card__basket{
+        width: 100%;
+    }
+
+    .card__preview-img img{
+        height: 98px;
+    }
+    
+    .card__price{
+        margin-top: 19px;
+    }
+
+    .card__badges{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .card__new{
+        display: block;
+    }
+
+    .card__icons{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 60px;
+    }
+    .swiper-buttons{
+        display: none;
+    }
+}
